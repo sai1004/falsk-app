@@ -2,6 +2,19 @@ from flask import *
 
 app = Flask(__name__)
 
+print("""    _           _     _
+ _ __  _   _| |__  _ __ (_)___| |__   ___ _ __
+| '_ \| | | |  _ \| '_ \| / __| '_ \ / _ | '__|
+| |_) | |_| | | | | |_) | \__ | | | |  __| |
+| .__/ \__, |_| |_| .__/|_|___|_| |_|\___|_|
+|_|    |___/      |_|
+
+
+
+Disclaimer: I'm Not Responsible For Your Action
+
+""")
+
 @app.route('/')
 def index():
     return render_template('index.html')
